@@ -62,10 +62,14 @@
 }
 
 .hamburger {
+  content: "";
+  display: block;
+  position: relative;
   width: 15px;
   height: 3px;
   background-color: #ffffff;
-  position: relative;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
 }
 
 .hamburger::before {
@@ -86,6 +90,26 @@
   background-color: #ffffff;
 }
 
+.hamburger-close {
+  display: none;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger-close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transform: rotate(90deg);
+}
+
 .nav-desktop {
   display: block;
 }
@@ -101,4 +125,16 @@
   .nav-mobile {
     display: block;
   }
+}
+.hamburger-container {
+  width: 200px;
+  height: 100vh;
+  background-color: #084829;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 20px;
 }
