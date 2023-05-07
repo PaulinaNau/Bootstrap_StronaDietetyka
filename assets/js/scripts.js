@@ -1,11 +1,11 @@
+const hamArea = document.querySelector(".nav-wrapper");
 
+const hamburger = () => {
+  const nav = document.querySelector(".nav-wrapper");
+  const hamContainer = document.querySelector(".hamburger-container");
 
+  nav.classList.toggle("nav-wrapper-open");
+  hamContainer.classList.toggle("active");
+};
 
-
-function hamburger () {
-    const open = document.getElementById("hamburger-open");
-    const close = document.getElementById("hamburger-close");
-   
-    open.classList.toggle("d-none");;
-    close.classList.toggle("d-block");;
-}
+hamArea.addEventListener("click", hamburger);

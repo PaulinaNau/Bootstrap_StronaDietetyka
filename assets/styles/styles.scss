@@ -73,58 +73,6 @@ $white: #ffffff;
   height: 50px;
 }
 
-.hamburger-area:hover {
-  cursor: pointer;
-}
-
-.hamburger-open {
-  display: block;
-  position: relative;
-  width: 15px;
-  height: 3px;
-  z-index: 10;
-  background-color: $white;
-  transition: all 0.5s ease-in-out;
-}
-.hamburger-open::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  width: 25px;
-  height: 3px;
-  background-color: $white;
-}
-.hamburger-open::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  width: 25px;
-  height: 3px;
-  background-color: $white;
-}
-
-.hamburger-close {
-  display: none;
-  width: 25px;
-  height: 3px;
-  background-color: $white;
-  z-index: 10;
-  position: relative;
-  transform: rotate(-45deg);
-  transition: all 0.5s ease-in-out;
-}
-
-.hamburger-close::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 25px;
-  height: 3px;
-  z-index: 10;
-  background-color: $white;
-  transform: rotate(90deg);
-}
-
 .nav-desktop {
   display: block;
 }
@@ -144,11 +92,80 @@ $white: #ffffff;
 
 .hamburger-container {
   width: 200px;
-  height: 100vh;
+  height: auto;
   background-color: $main-dark;
   position: absolute;
   right: 0;
   top: 0;
   z-index: 0;
-  padding-top: 100px;
+  padding: 60px 20px;
+  transform: translateX(100%);
+  transition: all .4s ease-in-out;
 }
+
+.active {
+  transform: translateX(0);
+}
+
+// hamburger
+
+
+.nav-wrapper {
+  width: 50px;
+  height: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-bar {
+  width: 30px;
+  height: 3px;
+  background-color: $white;
+  transition: all .4s ease-in-out;
+  position: absolute;
+}
+
+.nav-bar::before,
+.nav-bar::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: $white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .4s ease-in-out;
+}
+
+.nav-bar::before {
+transform: translateY(10px);
+}
+.nav-bar::after {
+transform: translateY(-10px);
+} 
+ .nav-wrapper-open .nav-bar {
+  transform: translateX(-50px);
+  background-color: transparent;
+ }
+
+ .nav-wrapper-open .nav-bar::before {
+  transform: rotate(45deg) translate(30px, -30px);
+ }
+ .nav-wrapper-open .nav-bar::after {
+  transform: rotate(-45deg) translate(30px, 30px);
+ }
+
