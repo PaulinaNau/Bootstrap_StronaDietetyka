@@ -28,9 +28,29 @@ h2 {
   line-height: 55px;
 }
 
+.H3B {
+  font-size: 25px;
+  font-weight: 400;
+  color: #0e643b;
+  line-height: 35px;
+}
+
+.H3R {
+  font-size: 25px;
+  font-weight: 300;
+  color: #0e643b;
+  line-height: 35px;
+}
+
 .T1R {
   font-size: 16px;
   font-weight: 300;
+  color: #101010;
+}
+
+.T1B {
+  font-size: 16px;
+  font-weight: 500;
   color: #101010;
 }
 
@@ -41,14 +61,40 @@ h2 {
   text-transform: uppercase;
 }
 
-@media screen {
+@media screen and (max-width: 768px) {
   .T1R {
+    font-size: 14px;
+  }
+  .T1B {
     font-size: 14px;
   }
   .T1B-up {
     font-size: 14px;
   }
 }
+.title {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-size: 35px;
+  font-weight: 200;
+  color: #0e643b;
+  line-height: 45px;
+  color: #0e643b;
+  text-align: center;
+}
+
+.title::before {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #0e643b;
+  position: absolute;
+  top: 50%;
+  left: -170px;
+  display: inline-block;
+}
+
 .number {
   font-size: 80px;
   font-weight: 600;
@@ -122,6 +168,12 @@ h2 {
   background-color: #ffffff;
   color: #ffd037;
   border: 2px solid #ffd037;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-container {

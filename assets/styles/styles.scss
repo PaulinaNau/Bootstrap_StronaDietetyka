@@ -35,11 +35,30 @@ h2 {
   line-height: 55px;
 }
 
+.H3B {
+  font-size: 25px;
+  font-weight: 400;
+  color: $main;
+  line-height: 35px;
+}
+.H3R {
+  font-size: 25px;
+  font-weight: 300;
+  color: $main;
+  line-height: 35px;
+}
+
 .T1R {
   font-size: 16px;
   font-weight: 300;
   color: $black;
 }
+.T1B {
+  font-size: 16px;
+  font-weight: 500;
+  color: $black;
+}
+
 .T1B-up {
   font-size: 16px;
   font-weight: 500;
@@ -47,14 +66,52 @@ h2 {
   text-transform: uppercase;
 }
 
-@media screen {
+@media screen and (max-width: 768px) {
   .T1R {
+    font-size: 14px;
+  }
+  .T1B {
     font-size: 14px;
   }
   .T1B-up {
     font-size: 14px;
   }
 }
+
+.title {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  font-size: 35px;
+  font-weight: 200;
+  color: $main;
+  line-height: 45px;
+  color: $main;
+  text-align: center;
+}
+
+.title::before {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: $main;
+  position: absolute;
+  top: 50%;
+  left: -170px;
+  display: inline-block;
+}
+
+// .title::after {
+//   content: "";
+//   width: 150px;
+//   height: 1px;
+//   background-color: $main;
+//   position: absolute;
+//   top: 50%;
+//   right: -10px;
+//   display: inline-block;
+//   margin: 0 0 0 15px;
+// }
 
 .number {
   font-size: 80px;
@@ -132,7 +189,12 @@ h2 {
   background-color: $white;
   color: $secondary;
   border: 2px solid $secondary;
+}
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // navigation
@@ -152,7 +214,7 @@ h2 {
 .top-margin {
   width: 100%;
   height: 70px;
- }
+}
 
 .nav-text {
   font-size: 16px;
@@ -204,7 +266,7 @@ h2 {
   z-index: 0;
   padding: 60px 20px;
   transform: translateX(100%);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .active {
@@ -212,7 +274,6 @@ h2 {
 }
 
 // hamburger
-
 
 .nav-wrapper {
   width: 50px;
@@ -237,13 +298,13 @@ h2 {
   width: 30px;
   height: 3px;
   background-color: $white;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   position: absolute;
 }
 
 .nav-bar::before,
 .nav-bar::after {
-  content: '';
+  content: "";
   width: 30px;
   height: 3px;
   background-color: $white;
@@ -252,26 +313,26 @@ h2 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-bar::before {
-transform: translateY(10px);
+  transform: translateY(10px);
 }
 .nav-bar::after {
-transform: translateY(-10px);
-} 
- .nav-wrapper-open .nav-bar {
+  transform: translateY(-10px);
+}
+.nav-wrapper-open .nav-bar {
   transform: translateX(-50px);
   background-color: transparent;
- }
+}
 
- .nav-wrapper-open .nav-bar::before {
+.nav-wrapper-open .nav-bar::before {
   transform: rotate(45deg) translate(30px, -30px);
- }
- .nav-wrapper-open .nav-bar::after {
+}
+.nav-wrapper-open .nav-bar::after {
   transform: rotate(-45deg) translate(30px, 30px);
- }
+}
 
 // home page
 
@@ -291,7 +352,7 @@ transform: translateY(-10px);
   }
 }
 
-.top-banner-wrapper img{
+.top-banner-wrapper img {
   width: 100%;
   height: auto;
 }
