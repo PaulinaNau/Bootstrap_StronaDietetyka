@@ -391,6 +391,31 @@ h2 {
   margin: 150px 0;
 }
 
+//offer
+
+.white-container-offer {
+  height: 250px;
+  background-color: $white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 $secondary;
+  transition: all .3s ease-in-out;
+}
+.white-container-offer:hover {
+  background-color: $main-dark;
+  color: $white;
+  box-shadow: -5px 5px $secondary;
+}
+
+
+
+
+// footer
+
 
 footer {
   width: 100%;
