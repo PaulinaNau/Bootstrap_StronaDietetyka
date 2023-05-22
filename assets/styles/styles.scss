@@ -3,11 +3,51 @@ $main-dark: #084829;
 $secondary: #ffd037;
 $light: #f5f5f5;
 $light-color: #e2eae3;
+$light-color-darker: #479c73;
 $black: #101010;
 $white: #ffffff;
+$error: #eb1515;
 
 * {
   font-family: "Poppins", sans-serif;
+  color: $black;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 300;
+  color: $white;
+}
+
+input {
+  width: auto;
+  height: 70px;
+  border: none;
+  background-color: $light-color-darker;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: $white;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid $secondary;
+}
+
+input::placeholder {
+  font-size: 18px;
+  font-weight: 200;
+  color: $light-color;
+}
+
+.serif-font-italic {
+font-family: 'Lora', serif;
+font-size: 35px;
+line-height: 45px;
+font-weight: 500;
+font-style: italic;
 }
 
 body {
@@ -33,7 +73,7 @@ h2 {
   line-height: 65px;
 }
 .H2R {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 200;
   color: $main;
   line-height: 55px;
@@ -69,6 +109,12 @@ h2 {
   color: $black;
   text-transform: uppercase;
 }
+
+.T2B {
+  font-size: 12px;
+  font-weight: 600;
+}
+
 
 
 
@@ -159,6 +205,12 @@ h2 {
 .text-color-light-color {
   color: $light-color;
 }
+.text-color-white {
+  color: $white;
+}
+.text-color-error {
+  color: $error;
+}
 
 // button
 
@@ -192,11 +244,31 @@ h2 {
   border: 2px solid $secondary;
 }
 
+.button-send {
+  width: 180px;
+  height: 50px;
+  background-color: $secondary;
+  color: $main-dark;
+  border: none;
+  text-decoration: none;
+  margin: 30px 10px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  transition: all .4s ease-in-out;
+}
+.button-send:hover {
+  background-color: $main-dark;
+  color: $white;
+}
+
+
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 // navigation
 
@@ -361,9 +433,11 @@ h2 {
 .white-container {
   background-color: $white;
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.main-color-container {
+  background-color: $main;
+  padding: 30px;
 }
 
 

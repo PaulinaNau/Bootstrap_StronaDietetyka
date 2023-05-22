@@ -1,5 +1,49 @@
 * {
   font-family: "Poppins", sans-serif;
+  color: #101010;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+input {
+  width: auto;
+  height: 70px;
+  border: none;
+  background-color: #479c73;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #ffd037;
+}
+
+input::-moz-placeholder {
+  font-size: 18px;
+  font-weight: 200;
+  color: #e2eae3;
+}
+
+input::placeholder {
+  font-size: 18px;
+  font-weight: 200;
+  color: #e2eae3;
+}
+
+.serif-font-italic {
+  font-family: "Lora", serif;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 body {
@@ -26,7 +70,7 @@ h2 {
 }
 
 .H2R {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 200;
   color: #0e643b;
   line-height: 55px;
@@ -63,6 +107,11 @@ h2 {
   font-weight: 500;
   color: #101010;
   text-transform: uppercase;
+}
+
+.T2B {
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .number {
@@ -150,6 +199,14 @@ h2 {
   color: #e2eae3;
 }
 
+.text-color-white {
+  color: #ffffff;
+}
+
+.text-color-error {
+  color: #eb1515;
+}
+
 .button-primary {
   width: 180px;
   height: 50px;
@@ -180,6 +237,24 @@ h2 {
   background-color: #ffffff;
   color: #ffd037;
   border: 2px solid #ffd037;
+}
+
+.button-send {
+  width: 180px;
+  height: 50px;
+  background-color: #ffd037;
+  color: #084829;
+  border: none;
+  text-decoration: none;
+  margin: 30px 10px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-send:hover {
+  background-color: #084829;
+  color: #ffffff;
 }
 
 .center {
@@ -354,9 +429,11 @@ h2 {
 .white-container {
   background-color: #ffffff;
   padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.main-color-container {
+  background-color: #0e643b;
+  padding: 30px;
 }
 
 @media screen and (max-width: 768px) {
