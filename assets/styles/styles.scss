@@ -3,7 +3,7 @@ $main-dark: #084829;
 $secondary: #ffd037;
 $light: #f5f5f5;
 $light-color: #e2eae3;
-$light-color-darker: #479c73;
+$light-color-darker: #42926a;
 $black: #101010;
 $white: #ffffff;
 $error: #eb1515;
@@ -14,18 +14,18 @@ $error: #eb1515;
 }
 
 label {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   color: $white;
 }
 
 input {
-  width: auto;
-  height: 70px;
+  //width: auto;
+  //height: 50px;
   border: none;
   background-color: $light-color-darker;
-  padding: 0 20px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 14px;
   font-weight: 500;
   color: $white;
   cursor: pointer;
@@ -41,6 +41,29 @@ input::placeholder {
   font-weight: 200;
   color: $light-color;
 }
+
+textarea {
+ // width: auto;
+  height: 150px;
+  border: none;
+  background-color: $light-color-darker;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
+}
+textarea::placeholder {
+  font-size: 18px;
+  font-weight: 200;
+  color: $light-color;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid $secondary;
+}
+
+
+
 
 .serif-font-italic {
 font-family: 'Lora', serif;
@@ -88,6 +111,19 @@ h2 {
 .H3R {
   font-size: 25px;
   font-weight: 300;
+  color: $main;
+  line-height: 35px;
+}
+
+.H4R {
+  font-size: 18px;
+  font-weight: 300;
+  color: $main;
+  line-height: 35px;
+}
+.H4B {
+  font-size: 18px;
+  font-weight: 500;
   color: $main;
   line-height: 35px;
 }
@@ -208,6 +244,9 @@ h2 {
 .text-color-white {
   color: $white;
 }
+.text-color-black {
+  color: $black;
+}
 .text-color-error {
   color: $error;
 }
@@ -280,7 +319,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 2px #474747;
+  box-shadow: 0 2px 2px #c8c8c8;
   margin: 0;
 }
 
@@ -309,7 +348,7 @@ h2 {
 
 .logo {
   width: auto;
-  height: 50px;
+  height: 70px;
 }
 
 .nav-desktop {
@@ -415,7 +454,7 @@ h2 {
 
 .main-animation {
   animation-name: main-animation;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 .claim-wrapper {
@@ -425,10 +464,22 @@ h2 {
   justify-content: space-between;
   padding: 10px;
   align-items: center;
-  margin-top: -280px;
+  margin-top: -200px;
   text-align: center;
   box-shadow: -10px -10px $secondary;
 }
+
+@media screen and (max-width: 1200px) {
+  .claim-wrapper {
+    margin-top: -40px;
+  }
+}
+
+// @media screen and (max-width: 1200px) {
+//   .claim-wrapper {
+//     margin-top: -180px;
+//   }
+// }
 
 .white-container {
   background-color: $white;
@@ -441,12 +492,6 @@ h2 {
 }
 
 
-
-@media screen and (max-width: 768px) {
-  .claim-wrapper {
-    margin-top: -50px;
-  }
-}
 
 .top-banner-wrapper img {
   width: 100%;
@@ -483,6 +528,36 @@ h2 {
   background-color: $main-dark;
   color: $white;
   box-shadow: -5px 5px $secondary;
+}
+
+// accordion
+
+.accordion-item>.accordion-header>.accordion-button {
+  background-color: $secondary;
+  color: $main-dark;
+  outline: none;
+
+}
+.accordion-item>.accordion-header>.accordion-button:hover {
+  background-color: $main;
+  color: $white;
+  outline: none;
+
+}
+.accordion-header button:focus {
+  background-color: $main;
+  color: $white;
+  outline: none;
+  box-shadow: none;
+
+}
+.accordion-header button:active {
+  background-color: $main;
+  color: $white;
+  outline: none;
+}
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 
