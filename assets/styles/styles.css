@@ -3,8 +3,16 @@
   color: #101010;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
 label {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 300;
   color: #ffffff;
 }
@@ -13,7 +21,7 @@ input {
   border: none;
   background-color: #42926a;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
   cursor: pointer;
@@ -25,13 +33,13 @@ input:focus {
 }
 
 input::-moz-placeholder {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
   color: #e2eae3;
 }
 
 input::placeholder {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
   color: #e2eae3;
 }
@@ -41,19 +49,19 @@ textarea {
   border: none;
   background-color: #42926a;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
 }
 
 textarea::-moz-placeholder {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
   color: #e2eae3;
 }
 
 textarea::placeholder {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
   color: #e2eae3;
 }
@@ -65,96 +73,87 @@ textarea:focus {
 
 .serif-font-italic {
   font-family: "Lora", serif;
-  font-size: 35px;
+  font-size: 2.5rem;
   line-height: 45px;
   font-weight: 500;
   font-style: italic;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 300;
-  color: #0e643b;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #101010;
-}
-
 .H1R {
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 200;
   color: #0e643b;
-  line-height: 65px;
+  line-height: 3rem;
+}
+
+.H1B {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #0e643b;
+  line-height: 3rem;
 }
 
 .H2R {
-  font-size: 35px;
+  font-size: 1.6rem;
   font-weight: 200;
   color: #0e643b;
-  line-height: 55px;
+  line-height: 2.7rem;
 }
 
 .H3B {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #0e643b;
   line-height: 35px;
 }
 
 .H3R {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 300;
   color: #0e643b;
   line-height: 35px;
 }
 
 .H4R {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #0e643b;
   line-height: 35px;
 }
 
 .H4B {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #0e643b;
   line-height: 35px;
 }
 
 .T1R {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   color: #101010;
 }
 
 .T1B {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: #101010;
 }
 
 .T1B-up {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: #101010;
   text-transform: uppercase;
 }
 
 .T2B {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .number {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 600;
   color: #0e643b;
 }
@@ -164,23 +163,20 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 16px;
-  }
-  h2 {
-    font-size: 14px;
-  }
   .H1R {
-    font-size: 35px;
+    font-size: 1.8rem;
+  }
+  .H2R {
+    font-size: 2rem;
   }
   .T1R {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .T1B {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .T1B-up {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .title-container {
     padding: 0;
@@ -188,10 +184,10 @@ h2 {
 }
 @media screen and (max-width: 992px) {
   h1 {
-    font-size: 20px;
+    font-size: 1.6rem;
   }
   h2 {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 }
 .bg-color-main {
@@ -324,14 +320,14 @@ h2 {
 }
 
 .nav-text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-text-active {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #ffd037;
   transition: all 0.3s ease-in-out;
@@ -521,8 +517,8 @@ h2 {
 }
 
 .accordion-item > .accordion-header > .accordion-button {
-  background-color: #ffd037;
-  color: #084829;
+  background-color: #084829;
+  color: #ffffff;
   outline: none;
 }
 
@@ -530,17 +526,16 @@ h2 {
   background-color: #0e643b;
   color: #ffffff;
   outline: none;
+  transition: all 0.4s ease-in-out;
 }
 
 .accordion-header button:focus {
-  background-color: #0e643b;
   color: #ffffff;
   outline: none;
   box-shadow: none;
 }
 
 .accordion-header button:active {
-  background-color: #0e643b;
   color: #ffffff;
   outline: none;
 }

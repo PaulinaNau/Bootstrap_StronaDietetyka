@@ -13,19 +13,25 @@ $error: #eb1515;
   color: $black;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
 label {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 300;
   color: $white;
 }
 
 input {
-  //width: auto;
-  //height: 50px;
   border: none;
   background-color: $light-color-darker;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: $white;
   cursor: pointer;
@@ -37,23 +43,23 @@ input:focus {
 }
 
 input::placeholder {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
   color: $light-color;
 }
 
 textarea {
- // width: auto;
+  // width: auto;
   height: 150px;
   border: none;
   background-color: $light-color-darker;
   padding: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: $white;
 }
 textarea::placeholder {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 200;
   color: $light-color;
 }
@@ -62,100 +68,86 @@ textarea:focus {
   border: 1px solid $secondary;
 }
 
-
-
+// fonts
 
 .serif-font-italic {
-font-family: 'Lora', serif;
-font-size: 35px;
-line-height: 45px;
-font-weight: 500;
-font-style: italic;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 300;
-  color: $main;
-}
-
-h2 {
-  font-size: 20px;
-  font-weight: 400;
-  color: $black;
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+  line-height: 45px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .H1R {
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: 200;
   color: $main;
-  line-height: 65px;
+  line-height: 3rem;
+}
+.H1B {
+  font-size: 2rem;
+  font-weight: 400;
+  color: $main;
+  line-height: 3rem;
 }
 .H2R {
-  font-size: 35px;
+  font-size: 1.6rem;
   font-weight: 200;
   color: $main;
-  line-height: 55px;
+  line-height: 2.7rem;
 }
 
 .H3B {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 400;
   color: $main;
   line-height: 35px;
 }
 .H3R {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 300;
   color: $main;
   line-height: 35px;
 }
 
 .H4R {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 300;
   color: $main;
   line-height: 35px;
 }
 .H4B {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: $main;
   line-height: 35px;
 }
 
 .T1R {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   color: $black;
 }
 .T1B {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   color: $black;
 }
 
 .T1B-up {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   color: $black;
   text-transform: uppercase;
 }
 
 .T2B {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
-
-
-
 .number {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 600;
   color: $main;
 }
@@ -164,25 +156,21 @@ h2 {
   margin: 50px 20px;
 }
 
-
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 16px;
-  }
-  h2 {
-    font-size: 14px;
-  }
   .H1R {
-    font-size: 35px;
+    font-size: 1.8rem;
+  }
+  .H2R {
+    font-size: 2rem;
   }
   .T1R {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .T1B {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .T1B-up {
-    font-size: 14px;
+    font-size: 1rem;
   }
   .title-container {
     padding: 0;
@@ -190,10 +178,10 @@ h2 {
 }
 @media screen and (max-width: 992px) {
   h1 {
-    font-size: 20px;
+    font-size: 1.6rem;
   }
   h2 {
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 }
 
@@ -293,21 +281,18 @@ h2 {
   margin: 30px 10px;
   transition: all 0.3s ease-in-out;
   font-weight: 500;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .button-send:hover {
   background-color: $main-dark;
   color: $white;
 }
 
-
-
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 // navigation
 
@@ -329,13 +314,13 @@ h2 {
 }
 
 .nav-text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: $white;
   transition: all 0.3s ease-in-out;
 }
 .nav-text-active {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: $secondary;
   transition: all 0.3s ease-in-out;
@@ -448,8 +433,12 @@ h2 {
 
 // home page
 @keyframes main-animation {
-  from {transform: scale(0.9);}
-  to {transform: scale(1)}
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .main-animation {
@@ -491,8 +480,6 @@ h2 {
   padding: 30px;
 }
 
-
-
 .top-banner-wrapper img {
   width: 100%;
   height: auto;
@@ -522,7 +509,7 @@ h2 {
   margin: 10px;
   cursor: pointer;
   box-shadow: 0 0 $secondary;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .white-container-offer:hover {
   background-color: $main-dark;
@@ -532,27 +519,23 @@ h2 {
 
 // accordion
 
-.accordion-item>.accordion-header>.accordion-button {
-  background-color: $secondary;
-  color: $main-dark;
+.accordion-item > .accordion-header > .accordion-button {
+  background-color: $main-dark;
+  color: $white;
   outline: none;
-
 }
-.accordion-item>.accordion-header>.accordion-button:hover {
+.accordion-item > .accordion-header > .accordion-button:hover {
   background-color: $main;
   color: $white;
   outline: none;
-
+  transition: all 0.4s ease-in-out;
 }
 .accordion-header button:focus {
-  background-color: $main;
   color: $white;
   outline: none;
   box-shadow: none;
-
 }
 .accordion-header button:active {
-  background-color: $main;
   color: $white;
   outline: none;
 }
@@ -560,11 +543,7 @@ h2 {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
-
-
-
 // footer
-
 
 footer {
   width: 100%;
@@ -575,11 +554,11 @@ footer {
 }
 
 footer a {
- text-decoration: none;
- color: $white;
- transition: all .4s ease-in-out;
+  text-decoration: none;
+  color: $white;
+  transition: all 0.4s ease-in-out;
 }
 footer a:hover {
- text-decoration: none;
- color: $secondary;
+  text-decoration: none;
+  color: $secondary;
 }
